@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=""method="POST">
+
+         <label for="nombre">Nombre y Apellido</label>
+        <input type="text" id="nombre" min="4">
+        
+         <label for="usuario">Usuario</label>
+         <input type="text" id="usuario">
+
+        <label for="edad">Fecha de nacimiento</label>
+         <input type="date" id="edad" min="13">
+
+         <label for="domicilio">Domicilio</label>
+         <input type="text" id="domicilio">
+
+        <fieldset>
+            <legend>Perfir del usuario</legend>
+             <div>
+                 <input type="radio" id="comprador" name="drone" value="comprador">
+                 <label for="comprador">Comprador></label></label>
+             </div>
+
+             <div>
+                 <input type="radio" id="vendedor" name="drone" value="vendedor">
+                 <label for="vendedor">Vendedor></label></label>
+             </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Categorías de interés</legend>
+            <div>
+                <input type="checkbox" name="electro" id="electro">
+                <label for="electro">Electro</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="moda" id="moda">
+                <label for="moda">Moda</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="hogar" id="hogar">
+                <label for="hogar">Hogar</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="jugueteria" id="jugueteria">
+                <label for="jugueteria">Juguetería</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="vida" id="vida">
+                <label for="vida">Vida sana</label>
+            </div>
+
+
+        </fieldset>
+
+        <label for="img-user">Foto de perfil</label>
+        <input type="file" id="img-user" name="img-user" accept=".jpg, png">
+
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" required>
+
+
+        <label for="confirmar-contraseña">Corfirmar contraseña</label>
+        <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" required>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">borrar</button>
+    </form>
+    
+</body>
+</html>

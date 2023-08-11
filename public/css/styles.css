@@ -13,16 +13,37 @@ body{
 .header{
     background-color: rgb(255, 240, 72);
     font-family:"Roboto, sans-serif";
+    padding: 0.5em 1.8em 1.8em 1.5em;
 }
 
+.file1{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
 .file{
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap:wrap ;
+    margin-top: 0.9em;
+    gap: 1.5em;
+    row-gap: 1.5em;
+    column-gap: 1.5em;
+
+}
+ul {
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 
 .imagen-logo{
-    width:50%;
+    width:190px;
     display: block;
 }
 .imagen-logo img{
@@ -30,19 +51,21 @@ body{
     max-height: 100%;
 }
 
-.search{
+.search {
     background-color:white;
-    border: 1px solid #666;
     color:#000;
     width: max-content;
-    display: inline;
+   position: relative;
+   left: 200px;
+    text-align: left;
+    max-width: 1px;
 }
 .text{
     color:black;
     text-align:center ;
 }
 li a:link{
-    color: red;
+    color: #000;
     text-decoration: none;
 }
 
@@ -54,9 +77,11 @@ li a:visited{
 .buscador{
     background-color:white;
     color:#666;
-    display: block;
-    border:1px solid #666;
-    width: max-content;
+
+    border:1px solid white ;
+    display:flex;
+    width: 480px;
+    padding: 0.8em 1.2em;
 }
 
 /*.header img{
@@ -78,6 +103,11 @@ li a:visited{
     background-color: #1259c3;
     color:white;
     text-align: center;
+ 
+    font-size: 1.4em;
+    border: none;
+    margin-top: 0.5em;
+    cursor: pointer;
 }
 
 .navegación1 li{
@@ -85,18 +115,19 @@ li a:visited{
     display: flex;
     
     align-items: flex-start;
+    justify-content: space-around;
 }
 
 .navegación2 li{
     padding: auto;
     display: flex;
-   ;
+   flex-wrap:wrap ;
     align-items: flex-end;
 }
 
 .plano{
    
-   width: 90vw;
+   width: 90%;
    margin: 0 auto 2em;
    display: block;
 }
@@ -104,21 +135,44 @@ li a:visited{
 .titulares{
     font-size: 24px;
     text-align:left;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    display: block;
 }
 
-.precios{
+.precios p{
     font-size: 18px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-.descuento{
+.descuento p{
+    font-size: 16px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.descripcion p{
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
     font-size: 16px;
 }
 
-.descripcion{
-    font-size: 16px;
-}
-
-.menu{
+.menu i{
     display: inline;
     padding: 0.5rem 0.7rem;
     border-radius: 3rem;
@@ -126,6 +180,7 @@ li a:visited{
     align-items: center;
     margin-bottom: 10px;
     font-size: 2em;
+
 }
 
 
@@ -137,51 +192,93 @@ li a:visited{
 .productos{
     padding: 10px;
     text-align: center;
+    gap: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+    cursor: pointer;
 
 }
 .productos img{
     max-width: 100%;
     max-height: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    overflow-x: ;
+    overflow-y: ;
 }
 
-.envio{
+.envio i{
     color: #39b54a;
     display: inline;
     padding: 0.5rem 0.7rem;
-    border-radius: 3rem;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
     margin-bottom: 10px
+
+   / display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    
+}
+
+.fa, .fas {
+    font-weight: 900;
+}
+
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fa, .fab, .fad, .fal, .far, .fas{
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+display: inline-block;
+font-style: normal;
+font-variant: normal;
+text-rendering: auto;
+line-height: 1;
 }
 
 .caja{
-    padding:15px;
     border-top: solid 1px #ebebeb ;
     background-color: white;
     text-align: left;
-   
-
+    padding: 1.5em;
+    position: relative;
 }
 
 footer{
-    display: block;
-    padding: 1rem 0 2rem;
+    padding: 16px;
     text-align: center;
     background-color: white;
-
+    display: block;
 }
 
 .pie-de-pag{
     margin-bottom: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+
 }
 
 .present{
     padding-bottom: 5px;
+    margin-bottom: 1.1em;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 1.5em;
+    padding: 1.5em;
 }
 .present h2{
-    font-size: 16px;
+    font-size: 14px;
 }
 .present p{
-    font-size: 15px;
+    font-size: 13px;
 }

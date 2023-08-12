@@ -1,0 +1,148 @@
+* {
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bodyreg{
+    background-color: ;
+}
+
+main{
+    width: 70%;
+    color: #ebebeb;
+    display: block;
+    align-items: center;
+    border: solid 1px #ebebeb;
+    max-width:90vw ;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 1.5em auto 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+    margin-bottom: 30px;
+
+}
+
+.tit {
+    margin-bottom: 1em;
+    
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color:black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+
+}
+
+.input-item {
+    margin-bottom: 1.5em;
+    width: 450px;
+}
+
+label {
+    cursor: default;
+    color:#666;
+}
+
+input {
+    padding: 1em;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/*.birth-date, .label {
+    color: black;
+    font-weight: 700;
+    font-size: 1em;*/
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    height: 65px;
+    border:none;
+}
+.boton{
+    margin-bottom: 1.5em;
+    width: 450px;
+    border: none;
+}
+.boton button{
+    width: 100%;
+    height: 100%;
+    color: white;
+    border: none;
+}
+
+
+.danger {
+    background-color: #d9534f;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.button {
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 3px;
+}
+
+.primary {
+    background-color: #1259c3;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.danger:hover{
+    background-color:#eb3d3d ;
+}
+
+.primary:hover {
+    background-color:#0022AA;
+}
+
+.perfil{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+}
+
+.posicion{
+    margin-bottom: 1.5em;
+    width: 450px;
+    border:none ;
+
+}
+legend{
+    font-size: 14px;
+    cursor: default;
+    color:#666;
+}
+
+.contraseñas{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+}
+.cont{
+    margin-bottom: 1.5em;
+    width: 450px;
+}

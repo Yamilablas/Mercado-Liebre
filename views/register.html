@@ -1,81 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons?d=gallery&m=free" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
-<body>
-    <form action=""method="POST">
 
-         <label for="nombre">Nombre y Apellido</label>
-        <input type="text" id="nombre" min="4">
-        
-         <label for="usuario">Usuario</label>
-         <input type="text" id="usuario">
-
-        <label for="edad">Fecha de nacimiento</label>
-         <input type="date" id="edad" min="13">
-
-         <label for="domicilio">Domicilio</label>
-         <input type="text" id="domicilio">
-
-        <fieldset>
-            <legend>Perfir del usuario</legend>
-             <div>
-                 <input type="radio" id="comprador" name="drone" value="comprador">
-                 <label for="comprador">Comprador></label></label>
-             </div>
-
-             <div>
-                 <input type="radio" id="vendedor" name="drone" value="vendedor">
-                 <label for="vendedor">Vendedor></label></label>
-             </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Categorías de interés</legend>
+<body class="bodyreg">
+    <header class="header">
+        <div class="file1">
+            <img src="../images/logo-mercado-liebre.svg" alt="dasds" class="imagen-logo" />
             <div>
-                <input type="checkbox" name="electro" id="electro">
-                <label for="electro">Electro</label>
+                <form class="buscador">
+                    <input class="input_search"  type="text" placeholder="Buscar productos, marcas y mas..." >
+                    <button type="submit" class="btn-searc" ></button>
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    
+                </form>
+            
             </div>
 
             <div>
-                <input type="checkbox" name="moda" id="moda">
-                <label for="moda">Moda</label>
+                <i class="fa-solid fa-hand-holding-dollar icon"></i>
+                <span class="text">Comprá en cuotas y sin tarjeta de crédito</span>
             </div>
+        </div>
 
+        <div class="file">
+            <div class="navegación1">
+                <ul>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
             <div>
-                <input type="checkbox" name="hogar" id="hogar">
-                <label for="hogar">Hogar</label>
+                <ul class="navegación2">
+                    <li><a href="/register">Creá tu propia cuenta<i class="fa-regular fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá<i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                    <li><a href="/home">Más compras<i class="fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
             </div>
+        </div>
 
-            <div>
-                <input type="checkbox" name="jugueteria" id="jugueteria">
-                <label for="jugueteria">Juguetería</label>
-            </div>
-
-            <div>
-                <input type="checkbox" name="vida" id="vida">
-                <label for="vida">Vida sana</label>
-            </div>
+        <div class="burger">
+            <button class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
 
 
-        </fieldset>
-
-        <label for="img-user">Foto de perfil</label>
-        <input type="file" id="img-user" name="img-user" accept=".jpg, png">
-
-        <label for="contraseña">Contraseña</label>
-        <input type="password" id="contraseña" name="contraseña" required>
-
-
-        <label for="confirmar-contraseña">Corfirmar contraseña</label>
-        <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" required>
-        
-        <button type="submit">Enviar</button>
-        <button type="reset">borrar</button>
-    </form>
+    </header>
     
+    <main>
+        <div class="register">
+
+            <h2 class="tit">Registro de Usuario</h1>
+
+            <form action="/register" method="POST" class="form">
+                <div class="inputs-wrapper">
+                    <div class="input-item">
+                        <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" min="4">
+                    </div>
+                    
+                    <div class="input-item">
+                        <label for="usuario">Usuario</label>
+                        <input type="text" id="usuario">
+                    </div>
+
+                    <div class="input-item">
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" id="e-mail">
+                    </div>
+    
+                    <div class="input-item">
+                        <label for="edad">Fecha de nacimiento</label>
+                        <input type="date" id="edad" min="13">
+                    </div>
+                   
+                    <div class="input-item">
+                        <label for="domicilio">Domicilio</label>
+                        <input type="text" id="domicilio">
+                    </div>
+                
+                    <div class="input-item">
+                        <label for="img-user">Foto de perfil</label>
+                        <input type="file" id="img-user" name="img-user" accept=".jpg, png">
+                    </div>
+                    
+                </div>
+
+                <div class="perfil">
+                    <fieldset class="posicion">
+                        <legend>Perfir del usuario</legend>
+                        <div>
+                            <input type="radio" id="comprador" name="drone" value="comprador">
+                            <label for="comprador">Comprador</label></label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="vendedor" name="drone" value="vendedor">
+                            <label for="vendedor">Vendedor</label></label>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset class="posicion">
+                        <legend>Interés</legend>
+                        <div>
+                            <input type="checkbox" name="electro" id="electro">
+                            <label for="electro">Electro</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" name="moda" id="moda">
+                            <label for="moda">Moda</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" name="hogar" id="hogar">
+                            <label for="hogar">Hogar</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" name="jugueteria" id="jugueteria">
+                            <label for="jugueteria">Juguetería</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" name="vida" id="vida">
+                            <label for="vida">Vida sana</label>
+                        </div>
+    
+    
+                    </fieldset>
+    
+                </div>
+
+                <div class="contraseñas">
+                    <div class="cont">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" id="contraseña" name="contraseña" required>
+                    </div>
+                
+                    <div class="cont">
+                        <label for="confirmar-contraseña">Corfirmar contraseña</label>
+                        <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" required>
+                    </div>
+
+                </div>
+                <div class="buttons">
+                    <div class="boton">
+                        <button type="reset" class="danger">Borrar</button>
+                    </div>
+                    <div class="boton">
+                        <button type="submit" class="primary">Enviar</button>
+                    
+                    </div>
+                </div>
+                
+                
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="pie-de-pag">
+            <div class="present">
+                <div>
+                    <div class="menu">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <h2>Pagá con tarjeta o en efectivo</h2>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago.¡Y
+                        siempre
+                        es seguro!</p>
+                </div>
+
+
+                <div>
+                    <div class="menu">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+
+                    <h2>Envío gratis desde $2.500</h2>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                        beneficio de Mercado Puntos.</p>
+
+                </div>
+
+                <div>
+
+                    <div class="menu">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+
+                    <h2>Seguridada, de principio a fin</h2>
+                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,porque estás siempre
+                        protegid@.</p>
+
+                </div>
+
+
+            </div>
+            <div>
+                <p>Copyrigth @ 1999-2020 MercadoLiebre S.R.L.</p>
+            </div>
+
+    </footer>
 </body>
+
 </html>

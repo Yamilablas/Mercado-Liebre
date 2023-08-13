@@ -16,17 +16,18 @@
 
 <body>
 
+
     <header class="header">
         <div class="file1">
-            <a href="/home"><img src="../images/logo-mercado-liebre.svg" alt="dasds" class="imagen-logo" /></a>
-            <div>
+            <a href="/home"><img src="../images/logo-mercado-liebre.svg" class="imagen-logo" /></a>
+            <div class="lupa">
                 <form class="buscador">
-                    <input class="input_search"  type="text" placeholder="Buscar productos, marcas y mas..." >
-                    <button type="submit" class="btn-searc" ></button>
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    
+                    <input class="input_search" type="text" placeholder="Buscar productos, marcas y mas...">
+                    <button type="submit" class="btn-searc"></button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
                 </form>
-            
+
             </div>
 
             <div>
@@ -60,34 +61,34 @@
         </div>
     </header>
     <main>
-        
+
         <div class="tabl">
 
             <h1 class="titulo">Login</h1>
-        <form action="/login.html" method="POST">
-            <div class="inpust">
-                <div class="usuario">
-                    <label for="usuario">Usuario:</label>
-                    <input type="text" id="usuario">
-                </div>
+            <form action="/login.html" method="POST">
+                <div class="inpust">
+                    <div class="usuario">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario"  placeholder="Usuario" required>
+                    </div>
 
-                <div class="contraseña">
-                    <label for="contraseña">Contraseña:</label>
-                    <input type="password" id="contraseña" name="contraseña" required>
-                </div>
+                    <div class="contraseña">
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+                    </div>
 
-                <div class="button">
-                    <button type="submit">Enviar</button>
+                    <div class="button">
+                        <button type="submit">Enviar</button>
+                    </div>
+
                 </div>
-            
-            </div>
-        </form>
+            </form>
         </div>
     </main>
     <footer>
         <div class="pie-de-pag">
             <div class="present">
-                <div>
+                <div class="iconos">
                     <div class="menu">
                         <i class="fa-solid fa-credit-card"></i>
                     </div>
@@ -98,7 +99,7 @@
                 </div>
 
 
-                <div>
+                <div class="iconos">
                     <div class="menu">
                         <i class="fa-solid fa-gift"></i>
                     </div>
@@ -109,7 +110,7 @@
 
                 </div>
 
-                <div>
+                <div class="iconos">
 
                     <div class="menu">
                         <i class="fa-solid fa-user-shield"></i>
@@ -123,11 +124,9 @@
 
 
             </div>
-            <div>
+            <div class="present">
                 <p>Copyrigth @ 1999-2020 MercadoLiebre S.R.L.</p>
             </div>
-        </div>
-
     </footer>
 </body>
 

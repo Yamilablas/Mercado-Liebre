@@ -59,9 +59,9 @@ body{
 .file{
     display: flex;
     margin-top: 0.9em;
-   /* gap: 3.5em;
+    gap: 3.5em;
     row-gap: 6.5em;
-    column-gap: 6.5em;*/
+    column-gap: 6.5em;
     justify-content: space-between;
     align-items: center;
 
@@ -425,6 +425,10 @@ footer .menu {
 }
 .present p{
     font-size: 12px;
+}
+.iconos:hover i{
+    cursor: pointer;
+    color:rgb(255, 240, 72) ;
 }
 
 @media (min-width: 769px){

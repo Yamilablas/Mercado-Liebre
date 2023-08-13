@@ -53,7 +53,7 @@ label{
    color: #666;
 }
 
-input{
+main input{
     padding: 1em;
     border: 1px solid #ebebeb;
     border-radius: 4px;
@@ -80,7 +80,7 @@ input{
 }
 
  
-button{
+main button{
     background-color:#1259c3 ;
     color:white;
     border: none;

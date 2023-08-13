@@ -16,15 +16,15 @@
 <body class="bodyreg">
     <header class="header">
         <div class="file1">
-            <a href="/home"><img width=50% src="../images/logo-mercado-liebre.svg" alt="dasds" class="imagen-logo" /></a>
-            <div class="buscador">
-                <form action="GET">
-                    <input class="search-bar"  type="text" placeholder="Buscar productos, marcas y mas..." > 
-                    <div class="submit-click">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+            <a href="/home"><img src="../images/logo-mercado-liebre.svg" class="imagen-logo" /></a>
+            <div class="lupa">
+                <form class="buscador">
+                    <input class="input_search" type="text" placeholder="Buscar productos, marcas y mas...">
+                    <button type="submit" class="btn-searc"></button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
                 </form>
-               
+
             </div>
 
             <div>
@@ -41,13 +41,13 @@
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
-                <div class="navegación2">
+            </div>
+            <div class="navegación2">
                 <ul>
                     <li><a href="/register">Creá tu propia cuenta<i class="fa-regular fa-id-card"></i></a></li>
                     <li><a href="/login">Ingresá<i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
                     <li><a href="/home">Más compras<i class="fa-solid fa-basket-shopping"></i></a></li>
                 </ul>
-                </div>
             </div>
         </div>
 
@@ -57,124 +57,130 @@
             </button>
         </div>
 
-
     </header>
-    
+
     <main>
         <div class="register">
 
             <h2 class="tit">Registro de Usuario</h1>
 
-            <form action="/register" method="POST" class="form">
-                <div class="inputs-wrapper">
-                    <div class="input-item">
-                        <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" id="nombre" min="4">
-                    </div>
-                    
-                    <div class="input-item">
-                        <label for="usuario">Usuario</label>
-                        <input type="text" id="usuario">
+                <form action="/register" method="POST" class="form">
+                    <div class="inputs-wrapper">
+                        <div class="input-item">
+                            <label for="nombre">Nombre y Apellido</label>
+                            <input type="text" id="nombre" min="4" placeholder="Nombre y Apellido" >
+                        </div>
+
+                        <div class="input-item">
+                            <label for="usuario">Usuario</label>
+                            <input type="text" id="usuario" min=4 placeholder="Usuario">
+                        </div>
+
+                        <div class="input-item">
+                            <label for="e-mail">E-mail</label>
+                            <input type="email" id="e-mail" required placeholder="E-mail">
+                        </div>
+
+                        <div class="input-item">
+                            <label for="edad">Fecha de nacimiento</label>
+                            <input type="date" id="edad" min="2006"placeholder="Fecha de nacimiento">
+                        </div>
+
+                        <div class="input-item">
+                            <label for="domicilio">Domicilio</label>
+                            <input type="text" id="domicilio"placeholder="Domicilio" required>
+                        </div>
+
+                        <div class="input-item">
+                            <label for="img-user">Foto de perfil</label>
+                            <input type="file" id="img-user" name="img-user" accept=".jpg"  required>
+                        </div>
+
                     </div>
 
-                    <div class="input-item">
-                        <label for="e-mail">E-mail</label>
-                        <input type="email" id="e-mail">
-                    </div>
-    
-                    <div class="input-item">
-                        <label for="edad">Fecha de nacimiento</label>
-                        <input type="date" id="edad" min="13">
-                    </div>
-                   
-                    <div class="input-item">
-                        <label for="domicilio">Domicilio</label>
-                        <input type="text" id="domicilio">
-                    </div>
-                
-                    <div class="input-item">
-                        <label for="img-user">Foto de perfil</label>
-                        <input type="file" id="img-user" name="img-user" accept=".jpg, png">
-                    </div>
-                    
-                </div>
+                    <div class="perfil">
+                        <fieldset class="posicion">
+                            <legend>Perfir del usuario</legend>
+                            <div class="comven">
+                                <label for="comprador">Comprador</label></label>
+                                <input type="radio" id="comprador" name="drone" value="comprador">
+                              
+                            </div>
 
-                <div class="perfil">
-                    <fieldset class="posicion">
-                        <legend>Perfir del usuario</legend>
-                        <div>
-                            <input type="radio" id="comprador" name="drone" value="comprador">
-                            <label for="comprador">Comprador</label></label>
-                        </div>
-    
-                        <div>
-                            <input type="radio" id="vendedor" name="drone" value="vendedor">
-                            <label for="vendedor">Vendedor</label></label>
-                        </div>
-                    </fieldset>
-    
-                    <fieldset class="posicion">
-                        <legend>Interés</legend>
-                        <div>
-                            <input type="checkbox" name="electro" id="electro">
-                            <label for="electro">Electro</label>
-                        </div>
-    
-                        <div>
-                            <input type="checkbox" name="moda" id="moda">
-                            <label for="moda">Moda</label>
-                        </div>
-    
-                        <div>
-                            <input type="checkbox" name="hogar" id="hogar">
-                            <label for="hogar">Hogar</label>
-                        </div>
-    
-                        <div>
-                            <input type="checkbox" name="jugueteria" id="jugueteria">
-                            <label for="jugueteria">Juguetería</label>
-                        </div>
-    
-                        <div>
-                            <input type="checkbox" name="vida" id="vida">
-                            <label for="vida">Vida sana</label>
-                        </div>
-    
-    
-                    </fieldset>
-    
-                </div>
+                            <div class="comven">
+                                <label for="vendedor">Vendedor</label></label>
+                                <input type="radio" id="vendedor" name="drone" value="vendedor">
+                                
+                            </div>
+                        </fieldset>
 
-                <div class="contraseñas">
-                    <div class="cont">
-                        <label for="contraseña">Contraseña</label>
-                        <input type="password" id="contraseña" name="contraseña" required>
-                    </div>
-                
-                    <div class="cont">
-                        <label for="confirmar-contraseña">Corfirmar contraseña</label>
-                        <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" required>
+                        <fieldset class="posicion">
+                            <legend>Interés</legend>
+                            <div class="tipo">
+                                <label for="electro">Electro</label>
+                                <input type="checkbox" name="electro" id="electro">
+                               
+                            </div>
+
+                            <div class="tipo">
+                                <label for="moda">Moda</label>
+                                <input type="checkbox" name="moda" id="moda">
+                              
+                            </div>
+
+                            <div class="tipo">
+                                <label for="hogar">Hogar</label>
+                                <input type="checkbox" name="hogar" id="hogar">
+                              
+                            </div>
+
+                            <div class="tipo">
+                                <label for="jugueteria">Juguetería</label>
+                                <input type="checkbox" name="jugueteria" id="jugueteria">
+                                
+                            </div>
+
+                            <div class="tipo">
+                                <label for="vida">Vida sana</label>
+                                <input type="checkbox" name="vida" id="vida">
+                                
+                            </div>
+
+
+                        </fieldset>
+
                     </div>
 
-                </div>
-                <div class="buttons">
-                    <div class="boton">
-                        <button type="reset" class="danger">Borrar</button>
+                    <div class="contraseñas">
+                        <div class="cont">
+                            <label for="contraseña">Contraseña</label>
+                            <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña"required>
+                        </div>
+
+                        <div class="cont">
+                            <label for="confirmar-contraseña">Corfirmar contraseña</label>
+                            <input type="password" id="confirmar-contraseña" name="confirmar-contraseña"placeholder="Confirmar contraseña" required>
+                        </div>
+
                     </div>
-                    <div class="boton">
-                        <button type="submit" class="primary">Enviar</button>
-                    
+                    <div class="buttons">
+                        <div class="boton">
+                            <button type="reset" class="danger">Borrar</button>
+                        </div>
+                        <div class="boton">
+                            <button type="submit" class="primary">Enviar</button>
+
+                        </div>
                     </div>
-                </div>
-                
-                
-            </form>
+
+
+                </form>
         </div>
     </main>
     <footer>
         <div class="pie-de-pag">
             <div class="present">
-                <div>
+                <div class="iconos">
                     <div class="menu">
                         <i class="fa-solid fa-credit-card"></i>
                     </div>
@@ -185,7 +191,7 @@
                 </div>
 
 
-                <div>
+                <div class="iconos">
                     <div class="menu">
                         <i class="fa-solid fa-gift"></i>
                     </div>
@@ -196,7 +202,7 @@
 
                 </div>
 
-                <div>
+                <div class="iconos">
 
                     <div class="menu">
                         <i class="fa-solid fa-user-shield"></i>
@@ -210,7 +216,7 @@
 
 
             </div>
-            <div>
+            <div class="present">
                 <p>Copyrigth @ 1999-2020 MercadoLiebre S.R.L.</p>
             </div>
 

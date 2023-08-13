@@ -3,10 +3,6 @@
     box-sizing: border-box;
 }
 
-.bodyreg{
-    background-color: ;
-}
-
 main{
     width: 70%;
     color: #ebebeb;
@@ -44,44 +40,38 @@ h2{
     flex-direction: column;
     gap: 1.5em;
 }
-.inputs-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 1em;
 
+
+.inputs-item{
+    width: 90%;
 }
 
-.input-item {
-    margin-bottom: 1.5em;
-    width: 450px;
-}
 
 label {
     cursor: default;
     color:#666;
 }
 
-input {
+main input {
     padding: 1em;
     border: 1px solid #ebebeb;
     border-radius: 4px;
     width: 100%;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-/*.birth-date, .label {
-    color: black;
-    font-weight: 700;
-    font-size: 1em;*/
 
-.buttons {
-    display: flex;
-    gap: 1em;
-    height: 65px;
-    border:none;
+.posicion{
+    
+    align-items: center;
 }
+
+
+
 .boton{
     margin-bottom: 1.5em;
-    width: 450px;
+   width: 100%;
     border: none;
 }
 .boton button{
@@ -91,6 +81,11 @@ input {
     border: none;
 }
 
+.buttons {
+    height: 65px;
+    max-width:100%;
+   
+}
 
 .danger {
     background-color: #d9534f;
@@ -123,26 +118,102 @@ input {
     display: flex;
     flex-wrap: wrap;
     column-gap: 1em;
-}
+    width: 100%;
 
+}
+legend{
+    font-weight: bold;
+}
+.comven{
+    display: flex;
+    align-items: center;
+    
+}
+.comven input{
+    width:40%;
+    align-items: flex-end;
+}
+.comven label{
+    width: 60%;
+
+}
+.tipo input{
+    width: 40%;
+}
+ input:hover{
+    cursor: pointer;
+    color: #1259c3;
+ }
+ .tipo input:hover{
+   cursor: pointer;
+  transform:perspective(0.5rem);
+ }
+ .posicion input:hover{
+    cursor: pointer;
+    transform:perspective(0.5rem);
+ }
+
+ 
+.tipo label{
+    width: 60%;
+}
 .posicion{
     margin-bottom: 1.5em;
-    width: 450px;
+    width: 100%;
     border:none ;
+}
 
+
+.comven input{
+    justify-content:flex-end;
+
+}
+
+
+.tipo{
+    display: flex;
+    align-items: center;
+    
+   
 }
 legend{
     font-size: 14px;
     cursor: default;
     color:#666;
+
 }
 
 .contraseñas{
+   
+    column-gap: 1em;
+
+    align-items: center;
+}
+
+    
+
+@media (min-width:361px){
+    .buttons {
+        display: flex;
+        gap: 1em;
+        height: 65px;
+        border:none;
+    }
+}
+
+@media (min-width: 769px){
+.input-item {
+    margin-bottom: 1.5em;
+    width: 48%;
+}
+.inputs-wrapper {
     display: flex;
     flex-wrap: wrap;
     column-gap: 1em;
 }
-.cont{
-    margin-bottom: 1.5em;
-    width: 450px;
+.perfil{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 1em;
+}
 }

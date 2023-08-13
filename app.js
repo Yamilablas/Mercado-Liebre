@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express()
 const path = require("path")
-const port = 5000
+const port = process.env.port || 5000
 
 app.use(express.static("public"))
 
@@ -22,6 +22,6 @@ app.get("/register", (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`[server] corriendo en el puerto ${port} (http://localhost:5000/)`);
+    console.log(`[server]: running at port ${port} (http://localhost:${port}/).`);
 })
 
